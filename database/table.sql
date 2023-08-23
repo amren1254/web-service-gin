@@ -1,0 +1,1 @@
+CREATE TABLE user(userid INTEGER PRIMARY AUTO_INCREMENT, username varchar(100), password varchar(1024));
