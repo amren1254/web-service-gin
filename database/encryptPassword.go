@@ -4,7 +4,8 @@ import (
 	"errors"
 	"fmt"
 	"log"
-	"web-service-gin/model"
+
+	"github.com/amren1254/gin-docker/model"
 
 	"golang.org/x/crypto/bcrypt"
 )

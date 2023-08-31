@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"log"
 	"time"
-	"web-service-gin/model"
+
+	"github.com/amren1254/gin-docker/model"
 
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"

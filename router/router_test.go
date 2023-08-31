@@ -7,8 +7,9 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"testing"
-	"web-service-gin/auth/signup"
-	"web-service-gin/model"
+
+	"github.com/amren1254/gin-docker/auth/signup"
+	"github.com/amren1254/gin-docker/model"
 
 	"github.com/gin-gonic/gin"
 	"gotest.tools/assert"

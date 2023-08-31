@@ -1,10 +1,10 @@
 package router
 
 import (
-	"web-service-gin/auth/login"
-	"web-service-gin/auth/signup"
-	"web-service-gin/controller"
-	"web-service-gin/middleware"
+	"github.com/amren1254/gin-docker/auth/login"
+	"github.com/amren1254/gin-docker/auth/signup"
+	"github.com/amren1254/gin-docker/controller"
+	"github.com/amren1254/gin-docker/middleware"
 
 	"github.com/gin-gonic/gin"
 )

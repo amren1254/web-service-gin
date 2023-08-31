@@ -2,7 +2,8 @@ package middleware
 
 import (
 	"net/http"
-	"web-service-gin/auth"
+
+	"github.com/amren1254/gin-docker/auth"
 
 	"github.com/gin-gonic/gin"
 )

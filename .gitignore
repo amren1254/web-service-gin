@@ -29,4 +29,4 @@ go.work
 *.sum
 
 # Go binary file
-web-service-gin
+github.com/amren1254/gin-docker

@@ -3,9 +3,10 @@ package login
 import (
 	"log"
 	"net/http"
-	"web-service-gin/auth"
-	"web-service-gin/database"
-	"web-service-gin/model"
+
+	"github.com/amren1254/gin-docker/auth"
+	"github.com/amren1254/gin-docker/database"
+	"github.com/amren1254/gin-docker/model"
 
 	"github.com/gin-gonic/gin"
 )

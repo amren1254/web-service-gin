@@ -2,8 +2,9 @@ package signup
 
 import (
 	"net/http"
-	"web-service-gin/database"
-	"web-service-gin/model"
+
+	"github.com/amren1254/gin-docker/database"
+	"github.com/amren1254/gin-docker/model"
 
 	"github.com/gin-gonic/gin"
 )

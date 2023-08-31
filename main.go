@@ -3,8 +3,9 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"web-service-gin/database"
-	"web-service-gin/router"
+
+	"github.com/amren1254/gin-docker/database"
+	"github.com/amren1254/gin-docker/router"
 
 	"log"
 

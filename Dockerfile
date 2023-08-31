@@ -14,7 +14,7 @@ RUN go mod download
 COPY *.go ./
 
 # Build
-RUN CGO_ENABLED=0 GOOS=linux go build -o /web-service-gin
+RUN CGO_ENABLED=0 GOOS=linux go build -o /github.com/amren1254/gin-docker
 
 # Optional:
 # To bind to a TCP port, runtime parameters must be supplied to the docker command.
@@ -24,4 +24,4 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /web-service-gin
 EXPOSE 8080
 
 # Run
-CMD ["/web-service-gin"]
+CMD ["/github.com/amren1254/gin-docker"]
