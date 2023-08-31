@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM golang:1.19
+FROM golang:1.21
 
 # Set destination for COPY
 WORKDIR /app
@@ -11,10 +11,11 @@ RUN go mod download
 
 # Copy the source code. Note the slash at the end, as explained in
 # https://docs.docker.com/engine/reference/builder/#copy
-COPY *.go ./
+COPY . .
 
 # Build
-RUN CGO_ENABLED=0 GOOS=linux go build -o /github.com/amren1254/gin-docker
+RUN go build 
+#-v -o /gin-docker ./app/github.com/amren1254/gin-docker
 
 # Optional:
 # To bind to a TCP port, runtime parameters must be supplied to the docker command.
@@ -24,4 +25,4 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o /github.com/amren1254/gin-docker
 EXPOSE 8080
 
 # Run
-CMD ["/github.com/amren1254/gin-docker"]
+CMD ["./gin-docker"]

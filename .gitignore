@@ -16,7 +16,7 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+vendor/
 .env
 .editorconfig
 
@@ -30,3 +30,4 @@ go.work
 
 # Go binary file
 github.com/amren1254/gin-docker
+gin-docker
