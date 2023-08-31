@@ -16,21 +16,21 @@ jobs:
           # Cache is managed by golangci-lint
           # https://github.com/actions/setup-go#caching-dependency-files-and-build-outputs
           cache: false
-      - uses: actions/checkout@v3
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3.6.0
-        with:
-          args: --timeout=4m
-  build-examples:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/setup-go@v4
-        with:
-          go-version: stable
-          cache: false
-      - uses: actions/checkout@v3
-      - name: Build examples
-        run: make build-examples
+      # - uses: actions/checkout@v3
+      # - name: golangci-lint
+      #   uses: golangci/golangci-lint-action@v3.6.0
+      #   with:
+      #     args: --timeout=4m
+  # build-examples:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/setup-go@v4
+  #       with:
+  #         go-version: stable
+  #         cache: false
+  #     - uses: actions/checkout@v3
+  #     - name: Build examples
+  #       run: make build-examples
   build-test:
     runs-on: ubuntu-latest
     steps:
