@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: githubactions:latest
+          tags: amren1254/githubactions:latest
